@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+body {
+  font-family: 'Amiri', serif;
+  background-color: #e9f5f1;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: center;
+  color: #222;
+}
+header, footer { padding: 20px; }
+header { background-color: #2e7d32; color: white; border-radius: 0 0 30px 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+header h1 { font-size: 28px; } header p { font-size: 18px; opacity: 0.9; }
+footer p { font-size: 14px; color: #555; }
+.card, .tip-card, .exercise-card, .mood-form {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.2s ease;
+}
+.card:hover, .tip-card:hover, .exercise-card:hover { transform: scale(1.02); }
+button, .back-btn, .main-btn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+button:hover, .back-btn:hover, .main-btn:hover { background-color: #256828; }
+.card h2, .tip-card h2, .exercise-card h2, .mood-form label { color: #00695c; }
+p { font-size: 18px; line-height: 1.6; color: #333; }
+.main-btn i, .tip-card h2 i, .exercise-card h2 i, .mood-form label i { margin-left: 8px; color: #2e7d32; }
+/* تجاوب مع الأجهزة */
+@media (max-width: 768px) {
+  header h1 { font-size: 24px; }
+  header p { font-size: 16px; }
+  .card, .tip-card, .exercise-card, .mood-form { width: 95%; padding: 15px; }
+  button, .back-btn, .main-btn { padding: 8px 15px; font-size: 16px; }
+}
+@media (max-width: 480px) {
+  header h1 { font-size: 20px; }
+  header p { font-size: 14px; }
+  p { font-size: 16px; line-height: 1.4; }
+  .card, .tip-card, .exercise-card, .mood-form { width: 100%; padding: 10px; margin: 15px auto; }
+  button, .back-btn, .main-btn { padding: 7px 12px; font-size: 14px; }
+}
